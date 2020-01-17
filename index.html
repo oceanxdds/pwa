@@ -13,21 +13,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="icon" type="image/png" href="images/icons-192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="images/icons-192.png" sizes="512x512">
-    
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker
-                .register('sw.js')
-                .then(function(registration) {
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }).catch(function(err) {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-        console.log('OK');
-    </script>
+    <script src="js/pwa.js"></script>
 </head>
 <body>
     
